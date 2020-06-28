@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*landing*/
+.landing{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4c4c4;
+}
+.landing button{
+    /*sizing & spacing*/
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    
+    background-color: #555555;
+    border: none;
+    color: white;
+    /* so user know it's clickable might be geh remove if so */
+    cursor: pointer;
+}
+
+/*manual*/ 
+#manual-modal{
+    position: fixed; /*no scrolling*/
+    z-index: 1; /*show on top */
+    top: 0;
+    left: 0;
+    height: 100%;     /* full screen */
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    /* this shall be changed with javascript to flex */
+    display: none;
+}
+.flex{ /* modal was display none, had to make another div and make it flex */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual-content{ /*the panels*/
+    width: 50%; /* always 50% of the screen*/
+    height: 250px; 
+    display: grid; /* to make them align together*/
+    grid-template-columns: repeat(2,1fr);
+    background-color: white;
+}
+/*  better alignment */
+.panel{
+    padding: 25px;
+    line-height: 2rem;
+}
+
+.panel form{ /* form was looking like shit this made it better */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel h1{ /* center h1 and push things */
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.panel button{ 
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 3px 10px;
+    background: none;
+    border-radius: 7px;
+}
+#custom{
+    width: 40px; 
+}
+/* border on the right just like the design we made */
+.buy{
+    border-right: 1px solid black;
+}
+
+#model-balance{
+    /* same shit with the manual */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.balance-content{
+    /* center the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* idk */
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    line-height: 40px;
+}
+.balance-content button{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 3px 10px;
+    background: none;
+    border-radius: 7px;
+}

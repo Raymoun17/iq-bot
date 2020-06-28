@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iqbot</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+    <div class="landing">
+        <button class="landbtn" id="Manual">
+            <div class="1">
+                <h1>Manual</h1>
+            </div>
+            <div class="2">
+                <h1>Mode</h1>
+            </div>
+        </button>
+
+        <button class="landbtn" id="Auto">
+            <div class="1">
+                <h1>Auto</h1>
+            </div>
+            <div class="2">
+                <h1>Mode</h1>
+            </div>
+        </button>
+
+        <button id="check" class="landbtn">
+            <div class="1">
+                <h1>Check</h1>
+            </div>
+            <div class="2">
+                <h1>Balance</h1>
+            </div>
+        </button>
+    </div>
+
+    <div id="manual-modal">
+        <div class="flex">
+            <div class="manual-content">
+                <div class="buy panel">
+                    <h1>Buy Panel</h1>
+                    <form action="#" method="#">
+                        <div class="assets">
+                            <span>assets</span>
+                            <input type="text" name="assets" id="assets">
+                        </div>
+
+                        <div class="money">
+                            <span>money</span>
+                            <label for="10">10</label>
+                            <input type="radio" name="money" id="10" value="10">
+                            <label for="50">50</label>
+                            <input type="radio" name="money" id="50" value="50">
+                            <label for="100">100</label>
+                            <input type="radio" name="money" id="100" value="100">
+                            <label for="200">200</label>
+                            <input type="radio" name="money" id="200" value="200">
+                            <input type="text" name="exptime" id="custom" placeholder="custom">
+                        </div>
+
+                        <div class="exptime">
+                            <span>exp. time</span>
+
+                            <label for="1">1</label>
+                            <input type="radio" name="exptime" id="1" value="1">
+                            <label for="2">2</label>
+                            <input type="radio" name="exptime" id="2" value="2">
+                            <label for="5">5</label>
+                            <input type="radio" name="exptime" id="5" value="5">
+                            <label for="10">10</label>
+                            <input type="radio" name="exptime" id="10" value="10">
+                            <input type="text" name="exptime" id="custom" placeholder="custom">
+                        </div>
+                        <button id="buy">Buy</button>
+                    </form>
+                </div>
+
+                <div class="sell panel">
+                    <h1>Sell Panel</h1>
+                    <form action="#" method="#">
+                        <div class="assets">
+                            <span>assets</span>
+                            <input type="text" name="assets" id="assets">
+                        </div>
+
+                        <div class="money">
+                            <span>money</span>
+                            <label for="10">10</label>
+                            <input type="radio" name="money" id="10" value="10">
+                            <label for="50">50</label>
+                            <input type="radio" name="money" id="50" value="50">
+                            <label for="100">100</label>
+                            <input type="radio" name="money" id="100" value="100">
+                            <label for="200">200</label>
+                            <input type="radio" name="money" id="200" value="200">
+                            <input type="text" name="exptime" id="custom" placeholder="custom">
+                        </div>
+
+                        <div class="exptime">
+                            <span>exp. time</span>
+
+                            <label for="1">1</label>
+                            <input type="radio" name="exptime" id="1" value="1">
+                            <label for="2">2</label>
+                            <input type="radio" name="exptime" id="2" value="2">
+                            <label for="5">5</label>
+                            <input type="radio" name="exptime" id="5" value="5">
+                            <label for="10">10</label>
+                            <input type="radio" name="exptime" id="10" value="10">
+                            <input type="text" name="exptime" id="custom" placeholder="custom">
+                        </div>
+                        <button id="sell">Sell</button>
+                    </form>
+                    <!--end of sell panel-->
+                </div>
+                <!--end of manual-content-->
+            </div>
+
+        </div>
+        <!--end of manual modal-->
+    </div>
+
+    <div id="model-balance">
+        <div class="flex">
+            <div class="balance-content">
+                <h1>Balance</h1>
+                <p>your current balance is : <span id="currentBalance">XXX $</span></p>
+                <button id="close">Leave</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
